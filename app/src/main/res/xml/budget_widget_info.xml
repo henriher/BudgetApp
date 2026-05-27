@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Métadonnées du widget.
+    targetCellWidth/Height : taille initiale sur la grille (Android 12+).
+    minWidth/Height        : taille minimale compatible Android < 12.
+    updatePeriodMillis     : rafraîchissement auto (max 30 min côté OS).
+-->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:targetCellWidth="3"
+    android:targetCellHeight="4"
+    android:minWidth="220dp"
+    android:minHeight="294dp"
+    android:minResizeWidth="110dp"
+    android:minResizeHeight="147dp"
+    android:updatePeriodMillis="1800000"
+    android:initialLayout="@layout/widget_budget"
+    android:resizeMode="horizontal|vertical"
+    android:widgetCategory="home_screen"
+    android:description="@string/widget_description" />

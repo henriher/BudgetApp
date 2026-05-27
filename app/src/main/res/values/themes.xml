@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.BudgetApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/vert_budget</item>
+        <item name="colorPrimaryVariant">@color/fond_sombre</item>
+        <item name="colorOnPrimary">@color/blanc</item>
+        <item name="colorSurface">@color/fond_carte</item>
+        <item name="android:windowBackground">@color/fond_sombre</item>
+        <item name="android:statusBarColor">@color/fond_sombre</item>
+        <item name="android:navigationBarColor">@color/fond_sombre</item>
+    </style>
+</resources>

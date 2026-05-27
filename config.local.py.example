@@ -1,0 +1,25 @@
+# Modèle de configuration locale — NE JAMAIS COMMITTER le vrai fichier.
+#
+# Étapes :
+#   1. Copiez ce fichier : cp config.local.py.example config.local.py
+#   2. Remplissez vos valeurs ci-dessous
+#   3. Vérifiez que config.local.py est bien dans .gitignore
+#
+# Obtenir la clé API Bunq :
+#   https://www.bunq.com/en/developer  →  "Create an API Key"
+#
+# Trouver vos IDs :
+#   Lancez : python app/src/main/python/main.py --fictif
+#   Ou interrogez : GET https://api.bunq.com/v1/user  (avec votre clé API)
+
+# Clé API Bunq (sandbox ou production)
+BUNQ_API_KEY = "votre-cle-api-bunq-ici"
+
+# ID utilisateur (visible dans l'app Bunq → Profil → Développeur)
+BUNQ_USER_ID = "12345678"
+
+# ID du compte monétaire principal à suivre
+BUNQ_ACCOUNT_ID = "87654321"
+
+# Optionnel — surcharge de l'objectif journalier (défaut : 15.0 €)
+# OBJECTIF_JOURNALIER = 15.0

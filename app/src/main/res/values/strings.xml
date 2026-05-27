@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Budget Perso</string>
+    <string name="widget_titre">Budget</string>
+    <string name="widget_description">Mini tableau de bord budget quotidien</string>
+    <string name="widget_objectif_defaut">15€</string>
+</resources>

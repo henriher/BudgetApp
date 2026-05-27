@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fond_sombre">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/blanc"
+            android:gravity="center"
+            android:paddingBottom="20dp" />
+
+        <!-- Carte : Aujourd'hui -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/fond_carte"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AUJOURD'HUI"
+                android:textSize="11sp"
+                android:textColor="@color/gris_texte" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:id="@+id/tvDepensesJour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--€"
+                    android:textSize="38sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blanc" />
+
+                <TextView
+                    android:id="@+id/tvObjectif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/ --€"
+                    android:textSize="18sp"
+                    android:textColor="@color/gris_texte"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Carte : Ce mois -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/fond_carte"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CE MOIS"
+                android:textSize="11sp"
+                android:textColor="@color/gris_texte" />
+
+            <TextView
+                android:id="@+id/tvDepensesMois"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-- € ce mois"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/blanc"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- Carte : Solde budget -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/fond_carte"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SOLDE BUDGET"
+                android:textSize="11sp"
+                android:textColor="@color/gris_texte" />
+
+            <TextView
+                android:id="@+id/tvSolde"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="--€"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/vert_budget"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- Zone d'affichage des erreurs -->
+        <TextView
+            android:id="@+id/tvStatut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="12sp"
+            android:textColor="@color/rouge_budget"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

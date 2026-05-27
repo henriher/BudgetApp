@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="vert_budget">#4CAF50</color>
+    <color name="orange_budget">#FF9800</color>
+    <color name="rouge_budget">#F44336</color>
+    <color name="blanc">#FFFFFF</color>
+    <color name="gris_texte">#AAAAAA</color>
+    <color name="separateur">#333333</color>
+    <color name="fond_sombre">#1A1A2E</color>
+    <color name="fond_carte">#16213E</color>
+</resources>

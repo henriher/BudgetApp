@@ -1,0 +1,37 @@
+# ===== SECRETS — NE JAMAIS COMMITTER =====
+config.local.py
+*.local.py
+.env
+
+# ===== Base de données locale (tests standalone) =====
+*.db
+*.db-shm
+*.db-wal
+
+# ===== Android / Gradle =====
+*.iml
+.gradle/
+local.properties
+.idea/
+.DS_Store
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.keystore
+release/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+venv/
+.venv/
+*.egg-info/
+
+# ===== VS Code =====
+.vscode/settings.json
+.vscode/launch.json

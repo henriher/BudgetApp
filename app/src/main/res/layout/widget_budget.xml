@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Layout du widget 3×4.
+    Structure placeholder — les visuels détaillés (barres de progression,
+    icônes catégories, graphique) seront définis dans un second temps.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widgetConteneur"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/widget_background"
+    android:padding="14dp">
+
+    <!-- Titre -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/widget_titre"
+        android:textSize="11sp"
+        android:textColor="@color/gris_texte"
+        android:gravity="end" />
+
+    <!-- Dépenses du jour (montant principal) -->
+    <TextView
+        android:id="@+id/widgetDepensesJour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="--€"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/blanc"
+        android:layout_marginTop="2dp" />
+
+    <!-- Objectif journalier -->
+    <TextView
+        android:id="@+id/widgetObjectif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="/ --€"
+        android:textSize="13sp"
+        android:textColor="@color/gris_texte" />
+
+    <!-- Séparateur -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separateur"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Dépenses du mois vs objectif -->
+    <TextView
+        android:id="@+id/widgetDepensesMois"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="--€ / --€"
+        android:textSize="13sp"
+        android:textColor="@color/blanc" />
+
+    <!-- Solde budget cumulé -->
+    <TextView
+        android:id="@+id/widgetSolde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="--€"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/vert_budget"
+        android:layout_marginTop="4dp" />
+
+    <!-- Espace flexible -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Heure de mise à jour -->
+    <TextView
+        android:id="@+id/widgetMiseAJour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="--:--"
+        android:textSize="10sp"
+        android:textColor="@color/gris_texte"
+        android:gravity="end" />
+
+</LinearLayout>
